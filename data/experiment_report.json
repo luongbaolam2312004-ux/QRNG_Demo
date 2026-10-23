@@ -1,0 +1,46 @@
+{
+    "experiment": {
+        "name": "QRNG Simulation for Cryptographic Key Generation",
+        "timestamp_utc": "2026-10-23T09:08:41.157738+00:00",
+        "source_type": "NumPy pseudorandom simulation; not a physical quantum random source"
+    },
+    "configuration": {
+        "n_bits": 100000,
+        "p_one": 0.5,
+        "seed": 42,
+        "key_size_bits": 128
+    },
+    "raw_bitstream": {
+        "n_bits": 100000,
+        "n_zeros": 50257,
+        "n_ones": 49743,
+        "p_zero": 0.50257,
+        "p_one": 0.49743,
+        "shannon_entropy": 0.9999809422031318,
+        "estimated_min_entropy": 0.99260354014907,
+        "adjacent_correlation": -0.00027632719859154434
+    },
+    "postprocessing": {
+        "method": "Von Neumann extractor",
+        "input_bits": 100000,
+        "output_bits": 24971,
+        "retention_ratio": 0.24971,
+        "output_statistics": {
+            "n_bits": 24971,
+            "n_zeros": 12391,
+            "n_ones": 12580,
+            "p_zero": 0.49621561010772497,
+            "p_one": 0.503784389892275,
+            "shannon_entropy": 0.9999586761830661,
+            "estimated_min_entropy": 0.9891216750262195,
+            "adjacent_correlation": 0.0020253256229176174
+        }
+    },
+    "cryptography": {
+        "algorithm": "AES-GCM",
+        "demo_key_size_bits": 128,
+        "demo_encryption_roundtrip": true,
+        "reference_encryption_roundtrip": true,
+        "security_note": "Successful encryption does not establish that the simulated demo key has sufficient cryptographic entropy."
+    }
+}
